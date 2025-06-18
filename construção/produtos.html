@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Sua Loja de Construção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Sua Loja de Construção</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <form class="search-form" action="/pesquisar" method="get">
+            <input type="text" name="q" placeholder="Pesquisar produtos...">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </header>
+
+    <main class="main-content">
+        <section class="products-intro">
+            <h2>Nossos Produtos</h2>
+            <p>Confira nossa vasta seleção de materiais para sua obra.</p>
+        </section>
+
+        <section class="photo-album">
+            <h3>Álbum de Materiais</h3>
+            <div class="album-grid">
+                <div class="album-item">
+                    <img src="imagens/telhasCeramica.jpg" alt="Telhas">
+                    <p>Telhas de Cerâmica</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/piso.jpg" alt="Pisos">
+                    <p>Pisos e Revestimentos</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/areia.jpg" alt="Areia">
+                    <p>Areia e Brita</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/ferragem.jpg" alt="Ferragens">
+                    <p>Ferragens e Aços</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/hidraulico.jpg" alt="Hidráulica">
+                    <p>Material Hidráulico</p>
+                </div>
+                <div class="album-item">
+                    <img src="https://via.placeholder.com/200x200?text=Foto+6+-+Eletrica" alt="Elétrica">
+                    <p>Material Elétrico</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/tinta.jpg" alt="Tintas">
+                    <p>Tintas e Acessórios</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/argamassa.jpg" alt="Argamassa">
+                    <p>Argamassa e Rejunte</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/madeira.jpg" alt="Madeiras">
+                    <p>Madeiras e Compensados</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/louca.jpg" alt="Louças">
+                    <p>Louças Sanitárias</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/metal.jpg" alt="Metais">
+                    <p>Metais Sanitários</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/Drywall.jpg" alt="Drywall">
+                    <p>Gesso Acartonado (Drywall)</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/impermeavel.jpg" alt="Impermeabilizantes">
+                    <p>Impermeabilizantes</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/porta.jpg" alt="Portas">
+                    <p>Portas e Janelas</p>
+                </div>
+                <div class="album-item">
+                    <img src="imagens/calhas.jpg" alt="Calhas">
+                    <p>Calhas e Rufos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Sua Loja de Construção</h3>
+                <p>Endereço: Rua da Construção, 123 - Cidade - BR</p>
+                <p>Telefone: (XX) XXXX-XXXX</p>
+                <p>Email: contato@suaalojadeconstrucao.com.br</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-form-container">
+                <h3>Entre em Contato</h3>
+                <form class="contact-form-footer" action="/enviar-contato" method="post">
+                    <div class="form-group">
+                        <label for="nome-footer">Nome:</label>
+                        <input type="text" id="nome-footer" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-footer">Email:</label>
+                        <input type="email" id="email-footer" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem-footer">Mensagem:</label>
+                        <textarea id="mensagem-footer" name="mensagem" rows="3" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sua Loja de Construção. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

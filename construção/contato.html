@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Orçamento - Sua Loja de Construção</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Sua Loja de Construção</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <form class="search-form" action="/pesquisar" method="get">
+            <input type="text" name="q" placeholder="Pesquisar produtos...">
+            <button type="submit">Pesquisar</button>
+        </form>
+    </header>
+
+    <main class="main-content">
+        <section class="contact-section">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Tem alguma dúvida, sugestão ou precisa de um orçamento? Preencha o formulário abaixo.</p>
+
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+                <p><strong>Email:</strong> orcamento@suaalojadeconstrucao.com.br</p>
+                <p><strong>Endereço:</strong> Rua da Construção, 123 - Bairro Central - Cidade - BR</p>
+                <p><strong>Horário de Atendimento:</strong> Seg-Sex: 8h-18h | Sáb: 8h-12h</p>
+            </div>
+
+            <div class="budget-form-container">
+                <h3>Solicitar Orçamento</h3>
+                <form class="budget-form" action="/solicitar-orcamento" method="post">
+                    <div class="form-group">
+                        <label for="nome-orcamento">Nome Completo:</label>
+                        <input type="text" id="nome-orcamento" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-orcamento">Email:</label>
+                        <input type="email" id="email-orcamento" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone-orcamento">Telefone (opcional):</label>
+                        <input type="tel" id="telefone-orcamento" name="telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo-obra">Tipo de Obra:</label>
+                        <select id="tipo-obra" name="tipo_obra" required>
+                            <option value="">Selecione</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="reforma">Reforma</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="materiais-orcamento">Materiais Necessários (descreva):</label>
+                        <textarea id="materiais-orcamento" name="materiais" rows="6" placeholder="Ex: 10 sacos de cimento, 500 tijolos, 20m² de piso, etc." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="anexo-orcamento">Anexar Planta/Lista (opcional):</label>
+                        <input type="file" id="anexo-orcamento" name="anexo" accept=".pdf, .doc, .docx, .jpg, .png">
+                        <small>Formatos aceitos: PDF, Word, Imagem.</small>
+                    </div>
+                    <button type="submit">Enviar Orçamento</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Sua Loja de Construção</h3>
+                <p>Endereço: Rua da Construção, 123 - Cidade - BR</p>
+                <p>Telefone: (XX) XXXX-XXXX</p>
+                <p>Email: contato@suaalojadeconstrucao.com.br</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-form-container">
+                <h3>Entre em Contato</h3>
+                <form class="contact-form-footer" action="/enviar-contato" method="post">
+                    <div class="form-group">
+                        <label for="nome-footer">Nome:</label>
+                        <input type="text" id="nome-footer" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-footer">Email:</label>
+                        <input type="email" id="email-footer" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem-footer">Mensagem:</label>
+                        <textarea id="mensagem-footer" name="mensagem" rows="3" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Sua Loja de Construção. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
